@@ -3,20 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <meta name="description" content="Poorna Manikanta Mopada — Web Developer Intern specializing in HTML, CSS, JavaScript, and modern front-end development.">
+    <meta name="author" content="Poorna Manikanta Mopada">
+    <title>Poorna Manikanta Mopada | Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header id="header">
-        <h1>Your Name</h1>
-        <p>Web Developer Intern</p>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#" class="nav-brand">Poorna Manikanta</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Web Developer Intern</p>
+                <h1>Poorna Manikanta <span class="hero-surname">Mopada</span></h1>
+                <p class="hero-summary">
+                    I design and build responsive, accessible web experiences with clean code and attention to detail. Currently growing my skills through hands-on projects at Synent Technologies.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="mailto:your.mmopadapoornamanikanta@gmail.com" class="btn btn-secondary">your.mmopadapoornamanikanta@gmail.com</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+                <ul class="hero-highlights">
+                    <li>
+                        <span class="highlight-label">Focus</span>
+                        <span class="highlight-value">Front-End Development</span>
+                    </li>
+                    <li>
+                        <span class="highlight-label">Company</span>
+                        <span class="highlight-value">Synent Technologies</span>
+                    </li>
+                    <li>
+                        <span class="highlight-label">Location</span>
+                        <span class="highlight-value">India</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my profile! I am an aspiring web developer currently undergoing a web development internship at Synent Technologies. I love building clean, functional, and user-friendly web applications.</p>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2>Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <p class="lead">
+                    I am an aspiring web developer with a strong foundation in HTML, CSS, and JavaScript. I am passionate about creating websites that are fast, intuitive, and visually polished.
+                </p>
+                <p>
+                    Through my internship at <strong>Synent Technologies</strong>, I am applying industry practices — version control, responsive design, and iterative development — to real projects. I am eager to contribute to teams that value quality, learning, and user-centered design.
+                </p>
+            </div>
+        </section>
 
     <section id="skills">
         <h2>Skills</h2>
@@ -36,15 +99,43 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Let's connect!</p>
-        <div class="contact-links">
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://github.com/your-username" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-        </div>
-    </section>
+        <section id="contact" class="section section-contact">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Contact</span>
+                <h2>Let's Work Together</h2>
+                <p class="section-desc">Open to internships, collaborations, and freelance opportunities. Reach out — I typically respond within 24 hours.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:your.mmopadapoornamanikanta@gmail.com" class="contact-card">
+                    <span class="contact-icon" aria-hidden="true">✉</span>
+                    <div>
+                        <span class="contact-type">Email</span>
+                        <span class="contact-value">your.mmopadapoornamanikanta@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://github.com/mmopadapoornamanikanta-max" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-icon" aria-hidden="true">⌥</span>
+                    <div>
+                        <span class="contact-type">GitHub</span>
+                        <span class="contact-value">View my repositories</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/poorna-manikanta-mopada-941596370/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-icon" aria-hidden="true">in</span>
+                    <div>
+                        <span class="contact-type">LinkedIn</span>
+                        <span class="contact-value">Connect professionally</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <p>&copy; 2026 Poorna Manikanta Mopada. All rights reserved.</p>
+        <p class="footer-note">Designed &amp; built by hand — no frameworks.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
